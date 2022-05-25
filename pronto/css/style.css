@@ -25,8 +25,6 @@ background-position: center;
 .v-vlite{--vlite-colorPrimary:#FFFFFF;}
 
 .topo { 
-
-
 font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin-top: 0px; 
 	border-bottom:1px solid #a129fd; 
@@ -36,6 +34,8 @@ font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
 .rodape {
 font-family: "Open Sans", Arial, Helvetica, sans-serif;
+position: absolute;
+width: 98.5%;
 margin-bottom: 0px; 
 border-top:1px solid #a129fd; background: #181818;
 text-align: center; 
@@ -43,13 +43,14 @@ font-family: arial; margin-top: 50px;
 color: #FFF; font-size: 12px;
 font-weight: normal;
 padding: 10px;
+height: auto;
 }
 
 .links { color: #FFFFFF; text-decoration: none; }
 
 .botao1 { 
   margin: 0 auto 0;
-  padding-top: 20px;
+  padding: 20px 10px 10px 10px;
 }
 
 .animacao-botao1 {
