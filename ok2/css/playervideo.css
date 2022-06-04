@@ -1,0 +1,87 @@
+/*=========== video player ===========*/
+.playeryoutube{
+	text-align: center; 
+	font-size:15px;
+
+}
+	
+		#overlayVideo{
+			display: block;
+            border-radius: 6px;
+		}
+        .video-overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: none;
+            z-index: 2 !important;
+            top: 0;
+            left: 0;
+        }
+
+        .coverTap {
+            background-image: url('../img/play.png');
+            background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+		
+		.coverTap1 {
+            background-image: url('../img/pause.png');
+            background-size: contain;
+			
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .embed-responsive {
+            position: relative;
+            display: block;
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 2px solid #06070b;
+            border-radius: 6px;
+        }
+
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;    border-radius: 6px;
+        }
+
+        .embed-responsive-16by9 {
+            padding-bottom: 56%;
+        }
+
+
+        .video-overlay-glass {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 9999 !important;
+            top: 0;
+            left: 0;
+        }
+
+.playeryoutube em{
+	font-size:25px;
+	font-weight:700;
+}
+
+/* ==========End Video player================== */
