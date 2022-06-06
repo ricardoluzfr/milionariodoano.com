@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>📺 Youtube Background</title>
+        <meta name="description" content="Simple script for embedding YouTube videos as cover background">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/228006f19a.js" crossorigin="anonymous"></script>
+
+        <style>
+            html, body {
+                font-family: 'Lato', sans-serif;
+                color: #1d1d1d;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .example-marquee {
+                position: relative;
+            }
+
+            .content {
+                display: table;
+                width: 100%;
+                min-height: 100vh;
+                z-index: 1;
+                position: relative;
+            }
+
+            .content .inner {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .content .inner h1,
+            .content .inner h2 {
+              color: white;
+              text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+            }
+
+            .content .inner h1 {
+              font-size: 62px;
+            }
+
+			.video-background-controls button {
+				font-size: 32px;
+				display: inline-block;
+				padding: 0px;
+				margin: 0px;
+				height: 32px;
+				width: 32px;
+				border-radius: 16px;
+				line-height: 32px;
+				border: none;
+				background: none;
+				-webkit-appearance: none;
+				color: white;
+				filter: drop-shadow(0px 0px 1px black);
+				cursor: pointer;
+				opacity: 1;
+				transition: all 250ms ease-in-out;
+				margin-left: 10px;
+			}
+
+			.video-background-controls button:hover {
+				opacity: 0.5;
+			}
+
+			iframe {
+				transition: opacity 500ms ease-in-out;
+				transition-delay: 250ms;
+			}
+        </style>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.youtube-background.js?v=1.0.8"></script>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <div class="example-marquee">
+                    <div id="ytbg" data-ytbg-fade-in="true" data-youtube="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Cake in a frying pan? Impossible!</h1>
+                        </div>
+                    </div>
+                </div>
+				<div class="example-marquee">
+                    <div id="ytbg2" data-ytbg-play-button="true" data-ytbg-start-at="10" data-ytbg-end-at="16" data-youtube="https://www.youtube.com/watch?v=MgDZBqTuUuE"></div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Click the button to pause.</h1>
+                            <h2>P.S. it also starts 10s into the video to skip the video intro and ends 16s into the video for shorter loops</h2>
+                        </div>
+                    </div>
+                </div>
+				<div class="example-marquee">
+                    <div id="ytbg3" data-ytbg-mute-button="true" data-ytbg-play-button="true" data-ytbg-resolution="4:3" data-youtube="https://www.youtube.com/watch?v=DLzxrzFCyOs
+					"></div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>Mute / Unmute.</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-marquee">
+                    <div id="ytbg0" data-vbg-resolution="4:1" data-vbg="https://vimeo.com/101926580"></div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>VIMEO!</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="example-marquee">
+                    <div id="ytbg-1" data-vbg="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" data-vbg-poster="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg" data-vbg-play-button="true" data-vbg-mute-button="true"></div>
+                    <div class="content">
+                        <div class="inner">
+                            <h1>HTML5 VIDEO!</h1>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+      				jQuery('[data-youtube], [data-vbg]').youtube_background();
+            });
+
+            document.querySelector('#ytbg2').addEventListener('video-background-pause', function(){
+              console.log(arguments);
+            });
+        </script>
+    </body>
+</html>
