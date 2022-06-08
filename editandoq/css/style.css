@@ -17,7 +17,8 @@
   }
 
   .gradiente {
-    background-image: linear-gradient(49deg,#ff305c,#7427f1 51%,#00b9c5);
+    background-image: linear-gradient(268deg, #5a0000, #bf0000, #5a0000, #bf0000);
+ /* linear-gradient(49deg,#ff305c,#7427f1 51%,#00b9c5);*/
     line-height: 40px;
     -webkit-background-clip: text;
     background-clip: text;
@@ -179,7 +180,7 @@ cursor: pointer;
 .botao { width: 95%; }
 .botao-inativo { width: 95%; }
 
-.rodape { position:  absolute; bottom: 0; }
+.rodape { position: relative; }
 
 .envolvevideo { width: 100%; }
 .responsive-video { padding-top: 150%; }
