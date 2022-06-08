@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>ARTES & VENDAS</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+ <link rel="shortcut icon" href="icone.png" />    
+
+<style type="text/css">
+
+html, body { font-family:'Roboto Condensed', 'Arial', sans-serif; color: #FFF; text-align: center; padding: 0px; margin: 0px; background: #F0F0F2; }
+
+
+  .checkout {
+    position: relative;
+    margin-bottom: 0; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+  
+}
+    @media (max-width: 768px) {
+  .checkout 
+    {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+}
+
+
+  .checkout iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 1000px !important;
+ 
+  }
+
+
+.cov,
+.covall,
+#loadingVideo,
+
+#cfs {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+  left: 0
+}
+
+#loadingVideo {
+  background:none;
+    
+}
+
+#cfs {
+  background-image: url(click-sound.gif);
+  background-size: cover;
+  z-index: 25;
+  display: none
+}
+
+.cov { /*
+  background-image: url(play.png) !important;
+  background-size: cover;
+  z-index: 20!important;
+  display: none; */
+
+ background-image: url(play.png) !important;   
+  z-index: 20!important;
+  background-position: top;
+  background-position-x: right;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+background-color: rgba(0, 0, 0, 0.4);
+
+ /* background-color: rgba(255, 88, 102, 0.4);  background-color: rgba(0, 0, 0, 0.4);  */
+
+}
+
+.covall {
+  z-index: 10!important
+}
+
+.responsive-video {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+
+}
+
+.responsive-video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.envolvevideo { width: 70%; margin-top: 0px; }
+
+.rodape { position: relative; }
+
+.envolvelogos { position: relative; height: 60px; background: none; width: 70%; padding-left: 0px; padding-right: 0px; }
+
+.logo { height: 42px ;float: left; margin-left: 0px; padding-top: 9px; }
+
+.msg { float:right; margin-right: 0px; padding-top: 18px; }
+
+
+@media (max-width: 767px){
+
+
+.envolvelogos { width: 98%; padding-left: 0px; padding-right: 0px; }
+
+.rodape { position:  relative; }
+
+.envolvevideo { width: 100%; }
+.responsive-video { padding-top: 150%; }
+.responsive-video iframe { width: 100%; }
+
+#cfs { 
+  background-image: url(sound.gif);
+  background-position: top;
+  background-position-x: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 65px; 
+}
+
+.cov {
+  background-image: url(play.png) !important;
+  z-index: 20!important;
+  background-position: top;
+  background-position-x: right;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+background-color: rgba(0, 0, 0, 0.4);
+
+   /* background-color: rgba(0, 0, 0, 0.4);  */
+
+}
+
+</style>
+
+ <!-- Meta Pixel Code -->
+
+<!-- End Meta Pixel Code -->
+
+<!-- Google -->
+
+<!-- End Google -->
+
+<!-- Outros -->
+
+<!-- End Outros -->
+    
+  </head>
+
+<body data-nanobar="linear-gradient(to right,#40e0d0,#ff8c00,#ff0080)" oncontextmenu="return false">
+
+
+<script src="jquery.min.js"></script>
+
+
+<div id="envolve" style="position: absolute; width: 100%; height: 100%; background: #06070B; /*border-radius: 10px;*/">
+
+<div id="cabecalho" style="position: absolute; line-height: 0px; width: 100%; height: 60px; background: #ff5866; border-bottom: solid 0px #181818;">
+
+  <center>
+
+<div class="envolvelogos" style="">
+
+  <img class="msg" src="msg0.png"></img>
+    <img class="logo" src="logo.png"></img>
+
+</div>
+
+
+</div><!--cabecalho-->
+
+<div id="titulo" style="color: #000; line-height: 50px; width: 100%; height: 50px; padding-top: 10px; background: #FFF;">
+
+</div><!--titulo-->
+
+
+        
+ <!--video-->
+ <p> <br>
+
+<center>
+<div class="envolvevideo" style="border: solid 0px #ff5866; border-radius: 5px; ">
+        <div id="responsive-video" class="responsive-video">
+
+          <div id="loadingVideo" style="display: none; "></div>
+          <div id="cfs" style="display: none; "></div>
+          <div class="cov" style="background-image: url('play.png'); display: block; border-radius: 0px; "></div>
+          <div class="covall"></div>
+
+          <iframe width="640" height="360" id="player" frameborder="0" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="" style="border-radius: 0px;"></iframe>
+          </div>
+         
+        
+</center>
+
+<style>
+
+</style>
+
+ <div id="referencias" style="line-height: 50px; display: none; width: 100%; height: 50px; background: #06070B;">referenciais  </div><!--referencias-->
+
+<div id="botao" class="" style="display: none; width: 100%; height: 50px; background: #06070B; ">botao </div><!--botao-->
+<br>
+<div id="checkout" class="checkout delay" style=" background: #06070B;">
+
+  <iframe src="https://pay.kiwify.com.br/o6IflsQ" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+ </div><!--checkout-->
+
+<div id="rodape" class="rodape" style="line-height: 50px; color: #333 ;width: 100%; height: 50px; line-height: 50px; background: #06070B; bottom: 0;"></div><!-- Copyright © <span id="year"></span> rodape-->
+
+</div><!--envolve-->
+
+ <script>
+        $('.delay').hide();
+        setTimeout(function () {
+            $('.delay').show();
+        }, 5 * 1000);
+    </script>
+
+
+<script>
+// IDs dos vídeos
+var idDesktop = "cwn4CaWjkAo"; // VÍDEO PARA COMPUTADOR
+var idCelular = ""; // VÍDEO PARA CELULAR DEIXAR VAZIO SE NAO TIVER
+
+// verifica se tem video celular se nao tem usa desktop e altera resolucao
+if (idCelular == "") { 
+   var idCelular = idDesktop
+
+document.getElementById("responsive-video").style.paddingTop = "56.25%";
+
+}
+
+// se tela pequena mostra um video, se nao outro
+var x = window.matchMedia("(max-width: 767px)");  
+if (x.matches) {
+
+var videoId = idCelular; // video celular 
+}
+else {
+  var videoId = idDesktop; //video desktop 
+
+}
+  document.getElementById("player").src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&amp;cc_load_policy=0&amp;controls=0&amp;disablekb=1&amp;fs=0&amp;playsinline=1&amp;modestbranding=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;host=https%3A%2F%2Fwww.youtube.com&amp;enablejsapi=1';
+
+</script> 
+
+<script>
+  
+  var muteStatus;
+  var c = 0;
+  var nw = true;
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+
+  function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+          videoId: "",
+          playerVars: {
+              autoplay: 1,
+              cc_load_policy: 0,
+              controls: 0,
+              disablekb: 1,
+              fs: 0,
+              playsinline: 1,
+              modestbranding: 1,
+              iv_load_policy: 3,
+              rel: 0,
+              showinfo: 0,
+              host: 'https://www.youtube.com'
+          },
+          events: {
+              onReady: onPlayerReady,
+              onStateChange: onPlayerStateChange,
+              onError: onPlayerError
+          }
+      });
+  }
+
+  function mutevid() {
+      player.mute();
+      player.setVolume(0);
+      muteStatus = 1;
+  }
+
+  function unmutevid() {
+      player.unMute();
+      player.setVolume(100);
+      muteStatus = 0;
+  }
+
+  function resetvid() {
+      $("#loadingVideo").hide();
+      $(".cov").show();
+      player.pauseVideo();
+      unmutevid();
+      player.seekTo(0);
+  }
+
+  function onPlayerReady() {
+      mutevid();
+      if (nw) {
+          player.seekTo(0);
+          nw = false;
+      }
+      player.playVideo();
+      if (na == 1) {
+          resetvid();
+      }
+      if (sc == 1) {
+          updateTimerDisplay();
+          updateProgressBar();
+          time_update_interval = setInterval(function() {
+              updateTimerDisplay();
+              updateProgressBar();
+          }, 1000);
+      }
+  }
+
+  function onPlayerError(e) {
+      player.stopVideo();
+      $(".cov").css("background-image", "url('play.png')");
+      $(".cov").show();
+      $("#loadingVideo").hide();
+      $("#cfs").hide();
+  }
+
+  function onPlayerStateChange(e) {
+      if (e.data === -1) {
+          c++;
+          if (c > 1) {
+              setTimeout(function() {
+                  if (player.getPlayerState() === -1) {
+                      resetvid();
+                  }
+              }, 3500);
+          }
+      }
+      if (e.data === 1) {
+          $("#loadingVideo").hide();
+          $(".cov").hide();
+          $(".cov").css("background-image", "url('continuar.png')");
+          if (muteStatus == 1) {
+              $("#cfs").show();
+          } else {
+              $("#cfs").hide();
+              unmutevid(); 
+          }
+      }
+      if (e.data === 2) {
+          $("#loadingVideo").hide();
+          $("#cfs").hide();
+          $(".cov").show();
+          unmutevid(); 
+      }
+      if (e.data === 3) {}
+      if (e.data === 0 || e.data === 5) {
+          $("#loadingVideo").hide();
+          $("#cfs").hide();
+          $(".cov").css("background-image", "url('continuar.png')");
+          $(".cov").show(); 
+      }
+  }
+  $(".cov").click(function() {
+      player.playVideo();
+      $(".cov").hide();
+  });
+  $(".covall").click(function() {
+      player.pauseVideo();
+      $("#cfs").hide();
+      $(".cov").show();
+  });
+  $("#cfs").click(function() {
+      
+      unmutevid();
+      $("#cfs").hide();
+
+      player.seekTo(0); // volta video ao inicio quando da play
+  });
+  
+</script>
+
+<script src="nanobar.min.js"></script>
+
+<script>
+/* ano */
+var date = new Date();
+var year = date.getFullYear();
+console.log(year);
+
+document.getElementById('year').innerHTML = year;
+</script>
+
+
+<!--span id="locationJS"></span-->
+
+ <script>
+      $.get("https://ssl.geoplugin.net/json.gp?k=292af9fb00c1353d", function (resp) {
+    //var data = JSON.parse(resp);
+    $("#locationJS").html(resp.geoplugin_city); // cidade
+});
+      
+    </script>
+
+<!-- temporziador delay minutos em segundos x 1000 (gera milisegundos) -->
+
+
+<!-- script>
+
+src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script
+
+$(document).ready(function () {
+//Shows the ATC button right away if the cookie exists
+   if (Boolean(Cookies.get('previousVisitor'))) {
+     $('.showtimer').show();
+   }
+   //Creates the cookie that expires in X days
+   Cookies.set('previousVisitor', 'true', { expires: 2 });
+   
+ });
+
+//Shows the ATC Button after 40min
+$(".showtimer").delay(1*10*1000).show(1);
+</script 
+
+coockie previows visiter
+-->
+
+
+</body>
+</html>
