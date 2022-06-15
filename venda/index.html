@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Artes & Vendas</title>
+<meta property="og:description" content="Acesse Aqui">
+
+<link rel="shortcut icon" href="favicon.png" /> 
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;900&display=swap" rel="stylesheet">
+
+<!--link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;500;700&display=swap" rel="stylesheet"-->
+<!--link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"-->
+
+<!-- Meta Pixel Code -->
+<!-- End Meta Pixel Code -->
+
+<!-- Google -->
+<!-- End Google -->
+
+<!-- Outros -->
+<!-- End Outros -->
+</head>
+
+<style>
+html, body { 
+color: white;
+background: #110519; /* #040301 */
+font-family:"Mulish",sans-serif; color: #FFF; text-align: center; padding: 0px; margin: 0px; 
+/*background-image: url("bg.jpeg");  
+background-color: rgba(0, 0, 0, 0.6);*/
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-blend-mode: darken;
+} /* 06070B roxo #140A27; */ 
+
+.envolvevideo { width: 768px; margin-top: 0px; }
+.rodape {position: relative; color: #b5b5b5; font-size:10px; margin-top: 50px; margin-bottom: 20px; }
+.titulo {
+     font-family: Mulish,sans-serif;
+     letter-spacing: -2px;
+    margin-bottom: 0;
+    color: #FFF; /* 383838 */
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+  }
+  .gradiente {
+    Margin-bottom: 0;
+    font-family: Mulish,sans-serif;
+    color: #fff;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: -2px;
+    background-image: linear-gradient(30deg, #ffd70d, #ff0053);
+    line-height: 40px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+      margin-bottom: 0;
+    font-size: 48px;
+    color: #262626;
+    font-weight: 900;
+
+  }
+  .subtitulo {
+     margin-bottom: 0;
+    color: #262626;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+  }
+
+.footer { font-size: 10px; bottom: 55px; left: 20px; right: 20px; margin-top: 20px;margin-bottom: 15px;}
+.botao-inativo {
+font-family: Mulish,sans-serif;
+ background-image: linear-gradient(49deg,#ff305c,#7427f1 51%,#00b9c5);
+/*background:  linear-gradient(30deg, #00ff93, #006eff); linear-gradient(30deg, #FF5968, #1EB4FE);*/
+max-width: 768px;
+z-index: 1;
+text-decoration: none;
+height: 75px;
+line-height: 75px;
+box-sizing:border-box;
+text-transform:uppercase;
+text-align:center;
+font-size:16px;
+font-weight:bold;
+color:#FFF;
+border-radius:6px;
+box-shadow: 0 0 0 0 #FFF;
+-webkit-font-smoothing: antialiased;
+background-size:cover;
+background-repeat: no-repeat;
+cursor: default;
+opacity: 0.1;
+position: relative;
+}
+
+.botao-inativo::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(30deg, #ff305c,#7427f1 51%,#00b9c5);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.6; }
+
+.botao { 
+max-width: 768px;
+font-family: Mulish,sans-serif;
+background-image: linear-gradient(30deg, #ffd70d, #ff0053); /*linear-gradient(49deg, #7427f1,#00b9c5);*/
+box-shadow: 0 0 0 0 #63199b;
+border: solid 0px #a129fd; /*efeito*/
+/*background:  linear-gradient(30deg, #00ff93, #006eff); linear-gradient(to right,#ff5866,#ff5866) 
+#F26100 laranja #FF5667 rosa; rosatop fc5185  roxo #63199b
+*/
+z-index: 1000!important;
+position: relative;
+margin-top: -75px;
+text-decoration: none;
+height: 75px;
+line-height: 75px;
+box-sizing:border-box;
+text-transform:uppercase;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+color:#FFF;
+border-radius:8px;
+-webkit-font-smoothing: antialiased;
+background-size:cover;
+background-repeat: no-repeat;
+cursor: pointer;
+-webkit-animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+-moz-animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+-ms-animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+text-decoration: underline;
+}
+.botao::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(30deg, #ffd70d, #ff0053);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.6; }
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+
+
+@media (max-width: 768px){ 
+.envolvetitulo { padding-left: 20px; padding-right: 20px; }
+.envolvevideo { width: 100%; }
+.titulo {font-size: 32px; line-height: 32px; letter-spacing: -1px; }
+.gradiente { font-size: 32px; line-height: 32px; letter-spacing: -1px; }
+
+.botao {
+box-shadow: 0 0 0 0 #63199b;
+border: solid 0px #a129fd;
+z-index: 1000!important;
+position: fixed;
+bottom: 15px;
+left: 20px;
+right: 20px;
+height: 50px;
+line-height: 50px;
+/* cor efeito */ 
+/*background:  linear-gradient(30deg, #00ff93, #006eff); linear-gradient(to right,#ff5866,#ff5866) 
+#F26100 laranja #FF5667 rosa; rosatop fc5185  roxo #63199b
+*/
+}
+.botao-inativo { box-shadow: 0 0 0 0 #63199b;
+border: solid 0px #a129fd;
+z-index: 1000!important;
+position: fixed;
+bottom: 15px;
+left: 20px;
+right: 20px;
+height: 50px;
+line-height: 50px;
+font-size: 16; }
+</style>
+       
+<body oncontextmenu="return false">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<center>
+<div id="envolve" style="position: relative; padding-top: 30px; padding-bottom: 30px; text-align: center; max-width: 768px; background: transparent;">
+
+<div class="envolvetitulo">
+<span class="titulo">
+
+Descubra o método exclusivo para vender <span class="gradiente">artesanato todos os dias!</span>
+
+</div>
+<!--span class="subtitulo"></span-->
+</div>
+
+
+<div class="envolvevideo">
+
+<script src="https://fast.wistia.com/embed/medias/59ae4lcy46.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="border-radius: 5px; overflow: hidden;padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_59ae4lcy46 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/59ae4lcy46/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=0;" /></div></div></div></div>
+
+</div>
+   
+<!-- informações -->
+
+<div class="delay" style="padding-top: 35px; padding-bottom: 30px;  -webkit-font-smoothing: antialiased; width: 350px; font-size: 15px; line-height: 20px; text-align: left; ">
+
+<span style="color: #ff1a58">✓</span> Aulas <b>Artes & Vendas</b> <span style="float: right;"><s>497,00</s></span><br>
+<span style="color: #ff1a58">✓</span> Detalhes que Vendem <span style="float: right;"><s>97,00</s></span><br>
+<span style="color: #ff1a58">✓</span> Apostilas <b>Passo a Passo</b> <span style="float: right;"><s>197,00</s></span><br>
+<span style="color: #ff1a58">✓</span> Técnicas <b>Bônus</b> <span style="float: right;">0,00</span><br>
+<span style="color: #ff1a58">✓</span> Masterclass<span style="float: right;"><s>997,00</s></span>
+<p>
+<span style="float: right;"><b>Total:</b> 12x R$ 39,95</span>
+
+</div>
+
+<div id="botao" class="" style="padding-top: 35px; background: #transparent;">
+<div id="botao-inativo" class="botao-inativo" align="center" style="text-decoration: underline;">
+
+LIBERA EM INSTANTES
+
+</div>
+
+<a style="text-decoration:none;" href="
+
+https://pay.kiwify.com.br/NgoOjov
+
+"> 
+
+<div class="botao delay">
+
+EU QUERO
+
+</div></a></div></div>
+
+
+<footer class="footer" style="visibility: hidden;">
+<center>
+  <p style="display: none;">All rights reserved. This website is not part of or endorsed by Facebook. Facebook is a trademark of Facebook, Inc.</p>
+
+<span style="color: #b5b5b5; ">Copyright © <span id="year"></span><br><a style="color: #b5b5b5; text-decoration: none;" href="politica.html" target="_blank">Política de Privacidade</a> | <a style="color: #b5b5b5; text-decoration: none;" href="termos.html" target="_blank">Termos de Uso</a></span>
+</center>
+</footer>
+
+ <script> // delay segundos * 1000 (186)
+        $('.delay').hide();
+        setTimeout(function () {
+            $('.delay').show();   
+        }, 10 * 1000); 
+ </script>
+
+<script> // muda titulo segundos * 1000
+        setTimeout(function () {       
+                 var tituloOriginal = document.title;
+                    let blink = window.setInterval(function() {
+                        document.title = tituloOriginal
+                        setTimeout(function() {
+                            document.title = "(1) Nova Mensagem"
+                        }, 2000);
+                    }, 3000);
+        }, 10 * 1000);
+</script>
+
+<script> // ano rodapé
+var date = new Date();
+var year = date.getFullYear();
+console.log(year);
+document.getElementById('year').innerHTML = year;
+</script>
+
+ <!--script> // cidade <span id="locationJS"></span>
+      $.get("https://ssl.geoplugin.net/json.gp?k=292af9fb00c1353d", function (resp) {
+    //var data = JSON.parse(resp);
+    $("#locationJS").html(resp.geoplugin_city); // cidade
+});      
+    </script>
+-->
+
+<!-- coockie previows visiter-->
+</body>
+</html>
