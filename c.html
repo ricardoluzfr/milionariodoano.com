@@ -1,0 +1,39 @@
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<script>
+$(document).ready(function () {
+//Shows the ATC button right away if the cookie exists
+   if (Boolean(Cookies.get('previousVisitor'))) {
+     $('.showtimer').show();
+   }
+   //Creates the cookie that expires in X days
+   Cookies.set('previousVisitor', 'true', { expires: 2 });
+   
+ });
+
+//Shows the ATC Button after 40min
+$(".showtimer").delay(41*60*1000).show(1000);
+</script>
+
+<div class="showtimer">aa</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- DELAY -->
+ <script>
+        $('.delay').hide();
+        setTimeout(function () {
+            $('.delay').show();   
+
+                 var tituloOriginal = document.title;
+                    let blink = window.setInterval(function() {
+                        document.title = tituloOriginal
+                        setTimeout(function() {
+                            document.title = "(1) Nova Mensagem"
+                        }, 2000);
+                    }, 3000);
+
+        }, 1 * 1000); // TEMPORIZADOR SEGUNDOS * 1000 190
+
+ </script>
